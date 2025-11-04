@@ -96,7 +96,7 @@ export default function AboutPage() {
             backgroundImage: 'url(/images/hammocks-umbrella-placed-near-large-pool.webp)',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/70"></div>
         </div>
         
         {/* Floating Elements */}

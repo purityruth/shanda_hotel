@@ -117,7 +117,7 @@ export default function FacilitiesPage() {
             backgroundImage: 'url(/images/type-entertainment-complex-popular-resort.webp)',
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/70"></div>
         </div>
         
         {/* Floating Elements */}
