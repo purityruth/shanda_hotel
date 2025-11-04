@@ -63,7 +63,7 @@ export const rooms: Room[] = [
     name: 'Standard Room',
     description: 'Comfortable and elegant room with modern amenities, perfect for business or leisure travelers.',
     price: 'From Ksh 12,500 / night',
-    image: '/images/portrait-positive.webp',
+    image: '/images/small-hotel-room-interior-with-double-bed-bathroom.webp',
     amenities: ['Free WiFi', 'Air Conditioning', 'Flat Screen TV', 'Coffee Maker']
   },
   {
@@ -71,7 +71,7 @@ export const rooms: Room[] = [
     name: 'Deluxe Suite',
     description: 'Spacious suite with separate living area, premium furnishings, and stunning city views.',
     price: 'From Ksh 18,900 / night',
-    image: '/images/portrait-positive.webp',
+    image: '/images/spacious-hotel-room-with-rug.webp',
     amenities: ['Free WiFi', 'Mini Bar', 'Jacuzzi', 'City View', 'Room Service']
   },
   {
@@ -79,7 +79,7 @@ export const rooms: Room[] = [
     name: 'Executive Suite',
     description: 'Luxurious suite with premium amenities, perfect for extended stays and special occasions.',
     price: 'From Ksh 25,000 / night',
-    image: '/images/portrait-positive.webp',
+    image: '/images/interior-modern-comfortable-hotel-room.webp',
     amenities: ['Free WiFi', 'Private Balcony', 'Kitchenette', 'Premium Toiletries', 'Concierge Service']
   }
 ];
@@ -116,7 +116,7 @@ export const facilities: Facility[] = [
     id: 1,
     name: 'Swimming Pool',
     icon: '🏊',
-    description: 'Infinity pool with panoramic city views'
+    description: 'Infinity pool with panoramic city views',
   },
   {
     id: 2,

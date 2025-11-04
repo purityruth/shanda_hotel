@@ -4,42 +4,42 @@ const facilities = [
     id: 1,
     name: 'Infinity Pool',
     description: 'Stunning infinity pool with panoramic city views and poolside service',
-    image: '/images/facilities/pool.jpg',
+    image: '/images/swimming-pool.webp',
     features: ['Heated Pool', 'Pool Bar', 'Sun Loungers', 'Towels Provided']
   },
   {
     id: 2,
     name: 'Luxury Spa',
     description: 'Full-service spa offering massages, facials, and wellness treatments',
-    image: '/images/facilities/spa.jpg',
+    image: '/images/attractive-african-woman-enjoying-face-massage-spa-salon.webp',
     features: ['Massage Therapy', 'Beauty Treatments', 'Steam Room', 'Relaxation Area']
   },
   {
     id: 3,
     name: 'Fitness Center',
     description: '24/7 gym with state-of-the-art equipment and personal training',
-    image: '/images/facilities/gym.jpg',
+    image: '/images/health-club-without-people-with-exercise-equipment.webp',
     features: ['Cardio Machines', 'Weight Training', 'Yoga Studio', 'Personal Trainers']
   },
   {
     id: 4,
     name: 'Conference Rooms',
     description: 'Modern meeting spaces for business events and conferences',
-    image: '/images/facilities/conference.jpg',
+    image: '/images/room-used-official-event.webp',
     features: ['Audio-Visual Equipment', 'Catering Service', 'High-Speed WiFi', 'Event Planning']
   },
   {
     id: 5,
     name: 'Fine Dining',
     description: 'Award-winning restaurants offering local and international cuisine',
-    image: '/images/facilities/restaurant.jpg',
+    image: '/images/fine-cuisine-luxury-lounge-breast-duck-with-red-wine.webp',
     features: ['Chef Specials', 'Wine Selection', 'Room Service', 'Dietary Options']
   },
   {
     id: 6,
     name: 'Business Center',
     description: 'Fully equipped business center for corporate travelers',
-    image: '/images/facilities/business.jpg',
+    image: '/images/office-buildings.webp',
     features: ['Printing Services', 'Private Booths', 'High-Speed Internet', 'Office Supplies']
   }
 ];
