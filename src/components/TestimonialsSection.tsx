@@ -63,13 +63,13 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Testimonial Carousel */}
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className={`relative bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-1000 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}>
             {/* Decorative Quote Icon */}
-            <div className="absolute top-8 left-8 text-secondary/10">
-              <Quote className="w-24 h-24" />
+            <div className="absolute top-4 left-4 text-secondary/10">
+              <Quote className="w-20 h-20" />
             </div>
 
             <div className="relative z-10 p-8 md:p-12 lg:p-16">
@@ -91,7 +91,7 @@ export default function TestimonialsSection() {
                   </div>
 
                   {/* Quote */}
-                  <blockquote className="text-2xl md:text-3xl font-light text-gray-800 leading-relaxed">
+                  <blockquote className="text-lg md:text-lg font-light text-gray-800 leading-relaxed">
                     "{testimonials[currentTestimonial].content}"
                   </blockquote>
 
@@ -113,10 +113,10 @@ export default function TestimonialsSection() {
 
                 {/* Visual Element */}
                 <div className="relative">
-                  <div className="aspect-square rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
+                  <div className="aspect-3/2 rounded-2xl bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center">
                     <div className="text-center">
-                      <div className="text-6xl mb-4">⭐</div>
-                      <div className="text-2xl font-light text-gray-700">Guest Experience</div>
+                      <div className="text-4xl mb-4">⭐</div>
+                      <div className="text-xl font-light text-gray-700">Guest Experience</div>
                       <div className="text-secondary font-semibold mt-2">Transformed</div>
                     </div>
                   </div>
