@@ -43,21 +43,15 @@ export default function TestimonialsSection() {
       
       <div className="container mx-auto px-4 relative z-10">
         {/* Header */}
-        <div className={`text-center mb-16 transition-all duration-1000 ${
+
+        <div className={`text-center mb-12 transition-all duration-700 ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
         }`}>
-          <div className="inline-flex items-center gap-3 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full shadow-sm border border-gray-100 mb-6">
-            <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-            <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-              Client Stories
-            </span>
-            <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
-          </div>
-          
-          <h2 className="text-4xl md:text-5xl font-light text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-4">
             Voices of <span className="text-secondary font-normal">Excellence</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <div className="w-24 h-0.5 bg-secondary mx-auto mb-6"></div>
+          <p className="text-lg text-gray-600">
             Discover how luxury hospitality leaders are transforming their guest experiences
           </p>
         </div>
