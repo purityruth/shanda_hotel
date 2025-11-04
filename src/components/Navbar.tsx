@@ -23,9 +23,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
-              <span className="text-white font-bold text-lg">F</span>
+              <span className="text-white font-bold text-lg">SH</span>
             </div>
-            <span className="text-2xl font-bold text-primary">Fikira1</span>
+            <span className="text-2xl font-bold text-primary">Shanda</span><span className='text-2xl font-bold text-secondary'>Hotel</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -56,7 +56,7 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-4 py-2 rounded-l-lg flex-1 text-gray-900"
+                className="px-4 py-2 bg-gray-50 rounded-l-lg flex-1 text-gray-900"
               />
               <button className="bg-secondary text-primary px-4 py-2 rounded-r-lg font-semibold hover:bg-yellow-600 transition-colors">
                 Subscribe
