@@ -164,27 +164,6 @@ export default function TestimonialsSection() {
             </div>
           </div>
         </div>
-
-        {/* Trust Indicators */}
-        <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 transition-all duration-1000 delay-500 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}>
-          {[
-            { number: '4.9/5', label: 'Guest Rating' },
-            { number: '500+', label: 'Hotels Transformed' },
-            { number: '98%', label: 'Satisfaction Rate' },
-            { number: '24/7', label: 'Support' }
-          ].map((stat, index) => (
-            <div key={index} className="text-center group">
-              <div className="text-3xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">
-                {stat.number}
-              </div>
-              <div className="text-gray-600 text-sm font-medium">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );
