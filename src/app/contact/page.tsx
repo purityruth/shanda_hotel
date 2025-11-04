@@ -1,7 +1,8 @@
 // app/contact/page.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { Phone, Mail, MapPin, Clock, MessageCircle, ChevronRight } from 'lucide-react';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,34 @@ export default function ContactPage() {
     email: '',
     message: ''
   });
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        }
+      },
+      { 
+        threshold: 0.1,
+        rootMargin: '50px 0px -50px 0px'
+      }
+    );
+
+    const currentSection = sectionRef.current;
+    if (currentSection) {
+      observer.observe(currentSection);
+    }
+
+    return () => {
+      if (currentSection) {
+        observer.unobserve(currentSection);
+      }
+    };
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -19,21 +48,76 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission placeholder
     console.log('Form submitted:', formData);
     alert('Thank you for your message! We will get back to you soon.');
     setFormData({ name: '', email: '', message: '' });
   };
 
+
+
   return (
-    <div className="min-h-screen bg-gray-50 pt-20">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-accent text-white py-20">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-          <p className="text-xl max-w-2xl mx-auto">
-            Get in touch with our team. We're here to help you with any questions about your stay.
-          </p>
+    <div className="min-h-screen bg-white">
+      {/* Enhanced Hero Section */}
+      <section
+  ref={sectionRef}
+  className="relative h-96 md:h-[500px] flex items-center justify-center overflow-hidden bg-gradient-to-r from-primary to-accent"
+>
+
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(/images/luxury-hotel-reception-hall-lounge-restaurant-with-high-ceiling.webp)',
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-accent/70"></div>
+        </div>
+        
+        {/* Floating Elements */}
+        <div className="absolute top-10 left-10 w-4 h-4 bg-secondary rounded-full animate-pulse"></div>
+        <div className="absolute bottom-20 right-20 w-6 h-6 bg-white/30 rounded-full animate-bounce"></div>
+        <div className="absolute top-20 right-1/4 w-3 h-3 bg-secondary/50 rounded-full animate-pulse delay-1000"></div>
+        <div className="absolute bottom-1/3 left-1/4 w-5 h-5 bg-white/20 rounded-full animate-pulse delay-500"></div>
+        
+        {/* Hero Content */}
+        <div className="relative z-10 text-center text-white px-4 max-w-4xl">
+          <div className={`mb-6 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
+            <h1 className="text-4xl md:text-6xl font-light mb-6">
+              Get In <span className="text-secondary font-normal">Touch</span>
+            </h1>
+            <div className="w-24 h-0.5 bg-secondary mx-auto mb-6"></div>
+            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
+              We're here to help you with any questions about your stay. Reach out to our dedicated team.
+            </p>
+          </div>
+
+          {/* Quick Contact Stats */}
+          <div className={`grid grid-cols-2 md:grid-cols-4 gap-8 mt-12 transition-all duration-1000 delay-300 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+          }`}>
+            {[
+              { number: '24/7', label: 'Support' },
+              { number: '< 1h', label: 'Response Time' },
+              { number: '4.9/5', label: 'Service Rating' },
+              { number: '100%', label: 'Satisfaction' }
+            ].map((stat, index) => (
+              <div key={index} className="text-center group">
+                <div className="text-2xl font-bold text-secondary mb-2 group-hover:scale-110 transition-transform duration-300">
+                  {stat.number}
+                </div>
+                <div className="text-white/80 text-sm">{stat.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="flex flex-col items-center text-white/80">
+            <span className="text-sm mb-2 font-light">Contact Us</span>
+            <ChevronRight className="w-5 h-5 transform rotate-90" />
+          </div>
         </div>
       </section>
 
