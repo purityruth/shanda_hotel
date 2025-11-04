@@ -36,10 +36,10 @@ export default function BookingWidget() {
         }`}>
           {/* Minimal Header */}
           <div className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-light text-gray-900 mb-2">
+            <h2 className="text-2xl md:text-3xl font-light text-white mb-2">
               Check Availability
             </h2>
-            <p className="text-gray-600">Plan your perfect stay</p>
+            <p className="text-gray-100">Plan your perfect stay</p>
           </div>
 
           {/* Clean Booking Form */}
@@ -54,7 +54,7 @@ export default function BookingWidget() {
                   type="date"
                   value={checkIn}
                   onChange={(e) => setCheckIn(e.target.value)}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-700 border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
                 />
               </div>
 
@@ -67,7 +67,7 @@ export default function BookingWidget() {
                   type="date"
                   value={checkOut}
                   onChange={(e) => setCheckOut(e.target.value)}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-700 border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
                 />
               </div>
 
@@ -79,7 +79,7 @@ export default function BookingWidget() {
                 <select
                   value={guests}
                   onChange={(e) => setGuests(Number(e.target.value))}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-700 border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
                 >
                   {[1, 2, 3, 4, 5, 6].map((num) => (
                     <option key={num} value={num}>
@@ -97,7 +97,7 @@ export default function BookingWidget() {
                 <select
                   value={rooms}
                   onChange={(e) => setRooms(Number(e.target.value))}
-                  className="w-full px-4 py-3 bg-white border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
+                  className="w-full px-4 py-3 bg-white text-gray-700 border border-gray-200 rounded-lg focus:ring-1 focus:ring-secondary focus:border-secondary transition-colors"
                 >
                   {[1, 2, 3, 4].map((num) => (
                     <option key={num} value={num}>
