@@ -63,7 +63,7 @@ export const rooms: Room[] = [
     name: 'Standard Room',
     description: 'Comfortable and elegant room with modern amenities, perfect for business or leisure travelers.',
     price: 'From Ksh 12,500 / night',
-    image: '/api/placeholder/400/300',
+    image: '/public/images/portrait-positive.webp',
     amenities: ['Free WiFi', 'Air Conditioning', 'Flat Screen TV', 'Coffee Maker']
   },
   {
@@ -71,7 +71,7 @@ export const rooms: Room[] = [
     name: 'Deluxe Suite',
     description: 'Spacious suite with separate living area, premium furnishings, and stunning city views.',
     price: 'From Ksh 18,900 / night',
-    image: '/api/placeholder/400/300',
+    image: '/public/images/portrait-positive.webp',
     amenities: ['Free WiFi', 'Mini Bar', 'Jacuzzi', 'City View', 'Room Service']
   },
   {
@@ -79,7 +79,7 @@ export const rooms: Room[] = [
     name: 'Executive Suite',
     description: 'Luxurious suite with premium amenities, perfect for extended stays and special occasions.',
     price: 'From Ksh 25,000 / night',
-    image: '/api/placeholder/400/300',
+    image: '/public/images/portrait-positive.webp',
     amenities: ['Free WiFi', 'Private Balcony', 'Kitchenette', 'Premium Toiletries', 'Concierge Service']
   }
 ];
@@ -91,7 +91,7 @@ export const testimonials: Testimonial[] = [
     role: 'Hotel Manager',
     content: 'Fikira1 transformed our booking process. Direct bookings increased by 45% in just 3 months!',
     rating: 5,
-    avatar: '/api/placeholder/100/100'
+    avatar: '/public/images/portrait-positive.webp'
   },
   {
     id: 2,
@@ -99,7 +99,7 @@ export const testimonials: Testimonial[] = [
     role: 'General Manager',
     content: 'The guest experience automation has saved us countless hours and improved our guest satisfaction scores dramatically.',
     rating: 5,
-    avatar: '/api/placeholder/100/100'
+    avatar: '/public/images/portrait-positive.webp'
   },
   {
     id: 3,
@@ -107,7 +107,7 @@ export const testimonials: Testimonial[] = [
     role: 'Operations Director',
     content: 'Seamless PMS integration and the operational tools have made our team more efficient than ever before.',
     rating: 4,
-    avatar: '/api/placeholder/100/100'
+    avatar: '/public/images/portrait-positive.webp'
   }
 ];
 
