@@ -70,7 +70,7 @@ export default function FinalCTASection() {
           }`}>
             <button className="group bg-secondary text-primary px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-yellow-600 transition-all duration-500 transform hover:scale-105 shadow-2xl hover:shadow-3xl relative overflow-hidden">
               <span className="relative z-10 flex items-center gap-3">
-                Schedule Free Demo
+                Contact Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
@@ -78,7 +78,7 @@ export default function FinalCTASection() {
             
             <button className="group border-2 border-white/30 text-white px-10 py-5 rounded-2xl font-semibold text-lg hover:bg-white hover:text-primary transition-all duration-500 transform hover:scale-105 backdrop-blur-sm">
               <span className="flex items-center gap-3">
-                View Case Studies
+                About Us
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </button>

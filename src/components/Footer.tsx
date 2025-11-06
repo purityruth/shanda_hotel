@@ -6,9 +6,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold text-secondary mb-4">Fikira1</h3>
+            <h3 className="text-2xl font-bold text-secondary mb-4">ShandaHotel</h3>
             <p className="text-gray-400 mb-4">
-              Transforming hotels through digital innovation and exceptional guest experiences.
+              Where luxury meets comfort. Enjoy premium rooms, exceptional dining, and warm personalised service designed to make every stay memorable.
             </p>
             <div className="flex space-x-4">
               {['Facebook', 'Twitter', 'Instagram', 'LinkedIn'].map((social) => (
@@ -42,7 +42,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>123 Hotel Street, Nairobi</li>
               <li>+254 712 345 678</li>
-              <li>info@fikira1.com</li>
+              <li>info@shandahotel.com</li>
             </ul>
           </div>
 
